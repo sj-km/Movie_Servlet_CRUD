@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="ISO-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies Collection - Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .btn-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .btn {
+            background-color: #3498db;
+            color: #ffffff;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .btn:hover {
+            background-color: #2980b9;
+        }
+        .btn-logout {
+            background-color: #e74c3c;
+        }
+        .btn-logout:hover {
+            background-color: #c0392b;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Movies Collection</h1>
+        <div class="btn-container">
+            <a href="insert-movie" class="btn">Add Movie</a>
+            <a href="fetch-movies" class="btn">View All Movies</a>
+            <a href="fetch-movies-id" class="btn">View Movie By Id</a>
+            <a href="fetch-movies-name" class="btn">View Movie By Name</a>
+            <a href="fetch-movies-rating" class="btn">View Movie By Rating</a>
+            <a href="fetch-movies-language" class="btn">View Movie By Language</a>
+            <a href="fetch-movies-genre" class="btn">View Movie By Genre</a>
+        </div>
+    </div>
+</body>
+</html>
